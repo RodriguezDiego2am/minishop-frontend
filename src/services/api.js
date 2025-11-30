@@ -1,6 +1,9 @@
 import axios from 'axios'
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
+// DEBUG: ver qué llega en cada entorno
+console.log('VITE_API_URL =>', import.meta.env.VITE_API_URL)
+console.log('API_URL (baseURL) =>', API_URL)
 
 // Crear instancia de axios
 const api = axios.create({
